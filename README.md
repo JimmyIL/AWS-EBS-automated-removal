@@ -16,11 +16,11 @@ Here are some important things to note:
 
 - If any modifications, queuing for deletion, or deletions happen, an email will be sent with volumes involved and their information.
 
-## Prerequisites
+## Prerequisites  [all included in code but some things to mention for proper operations]
 
 In order for the Lambda function to be able to remove an EBS volume, the following must be met:
 
-- The Lambda function is run EVERY DAY by an EventBridge event. (You can change it to twice a day, but never more than 1 day)
+- The Lambda function is run EVERY DAY by an EventBridge event. (You can change it to run more times a day, but don't have it trigger longer than 1 day i.e.(every other day) )
 
 - EBS volumes must have been auto tagged with the current date and must not be in use. For example, a tag value for a volume getting deleted today would be: 
 
