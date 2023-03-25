@@ -1,7 +1,9 @@
 # AWS-EBS-volume-automation
 Cost optimization 🚀 with auto tagging, maintaining, and removing unused volumes in AWS with Terraform
 
-## This works great, but some Optimizations are in progress:
+[Anyone can deploy this solution by just using terraform. No packaging or other tool installation required.]
+
+### This works great, but some Optimizations are in progress:
 - add switch defining all regions per account OR user defined region list this deploys to.
 - check for snapshots before deletion, if no snapshot create a snapshot and update EBS volume scheduled deletion for next day. 
 
